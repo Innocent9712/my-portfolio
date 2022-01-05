@@ -1,0 +1,35 @@
+@tailwind components;
+
+@layer components {
+    .list {
+        @apply flex flex-row mt-6 flex-wrap mx-auto gap-5 md:gap-7 justify-center;
+    }
+
+    .list li{
+        @apply relative basis-11/12 md:basis-3/12 my-6 w-full;
+    }
+
+    .list li figure {
+        @apply rounded-md;
+        box-shadow: 2px 7px 18px 0px rgba(94,108,132,0.33);
+    -webkit-box-shadow: 2px 7px 18px 0px rgba(94,108,132,0.33);
+    -moz-box-shadow: 2px 7px 18px 0px rgba(94,108,132,0.33);
+    }
+
+    .list h3 {
+        @apply mb-3;
+    }
+
+    .list figure div {
+        @apply overflow-y-hidden;
+        height: 14em;
+    }
+
+    .list figcaption {
+        @apply absolute p-6 w-full flex justify-between mx-auto;
+        bottom: -0.1rem;
+        background-color: #FFDDD2;
+        opacity: 0.9;
+    }
+    
+}

@@ -1,0 +1,11 @@
+@tailwind components;
+
+@layer components {
+    .container {
+        @apply flex flex-row flex-wrap justify-center gap-4 md:gap-7 w-10/12 sm:max-w-3xl mx-auto mt-10;
+    }
+
+    .container li {
+        @apply basis-20 md:basis-24 mx-3;
+    }
+}
