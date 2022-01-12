@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import github from "../public/images/github.svg"
 import twitter from "../public/images/twitter.svg"
 import linkedin from "../public/images/linkedin.svg"
+import logo from "../public/images/logo.svg"
 import introBg from "../public/images/section1bg.jpg"
 import Stack from '../components/stack'
 import Projects from '../components/projects'
@@ -30,7 +31,7 @@ export default function Home() {
                   </span>
                 </h1>
                 <h3>
-                  Frontend Developer
+                  Frontend Engineer
                 </h3>
               </div>
               <button>              
@@ -103,10 +104,15 @@ export default function Home() {
               />
             <figcaption>
               <h2>Hey there!</h2><br/>
-              <p>My name is <span>Innocent</span> <br/>and I'm a developer.</p>
+              <p>My name is <span>Innocent</span> <br/><span>and I provide solutions through code.</span></p>
             </figcaption>
             </figure>
           </section>
+          <article className={styles.more_info}>
+            <p>I'm a Frontend Engineer proficient in building out outstanding user interfaces that are fully responsive and interactive. I am keen on learning about problems in providing optimal experience for users and exploring potential technologies and practices capable of solving these problems.</p>
+            <p>Connecting and networking with other people in the tech space and learning about how they are helping shape the world with technology is something I am actively engaged in. </p>
+            <p>I'm also planning on exploring cloud technologies and how they can enable me provide solutions for software users.</p>
+          </article>
           <section className={styles.stack}>
             <h1>
               Tech Stack
@@ -122,7 +128,10 @@ export default function Home() {
         </main>
 
         <footer className={styles.footer}>
-
+        <Image 
+              src={logo}
+              alt="logo"
+              />
         </footer>
       </div>
     </Layout>

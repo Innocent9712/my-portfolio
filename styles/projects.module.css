@@ -2,12 +2,13 @@
 
 @layer components {
     .list {
-        @apply flex flex-row mt-6 flex-wrap mx-auto gap-5 md:gap-7 justify-center;
+        @apply flex flex-row mt-6 md:w-10/12 md:max-w-4xl flex-wrap mx-auto gap-3 md:gap-7;
     }
 
     .list li{
-        @apply relative basis-11/12 md:basis-3/12 my-6 w-full;
+        @apply relative mx-auto basis-11/12 my-6 w-full;
     }
+
 
     .list li figure {
         @apply rounded-md;
@@ -17,7 +18,7 @@
     }
 
     .list h3 {
-        @apply mb-3;
+        @apply mb-6 text-lg text-zinc-500;
     }
 
     .list figure div {
@@ -28,8 +29,24 @@
     .list figcaption {
         @apply absolute p-6 w-full flex justify-between mx-auto;
         bottom: -0.1rem;
-        background-color: #FFDDD2;
+        background-color: #F1FAEE;
         opacity: 0.9;
+        color: #457b9d
+    }
+
+    .list figcaption a {
+        @apply flex flex-row items-center text-sm rounded-sm p-1;
+        border: 2px solid #457b9d;
+    }
+
+    .list figcaption a p {
+        @apply ml-2;
     }
     
+}
+
+@media screen and (min-width: 768px ) {
+    .list li {
+        flex-basis: 47%;
+    }
 }
