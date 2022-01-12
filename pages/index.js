@@ -124,7 +124,7 @@ export default function Home() {
               Projects
             </h1>
             <Projects />
-            <p> Want to see more? checkout my <a href="https://github.com/Innocent9712" target="_blank" referrerPolicy="no-referrer">github</a>.</p>
+            <p className={styles.projects_last_link}> Want to see more? checkout my <a href="https://github.com/Innocent9712" target="_blank" referrerPolicy="no-referrer">github</a>.</p>
           </section>
         </main>
 
