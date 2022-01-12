@@ -135,6 +135,14 @@
   .projects {
     @apply w-11/12;
   }
+
+  .projects P:last-child {
+    @apply text-sm my-6 ml-8 md:ml-20 md:my-8;
+  }
+
+  .projects P:last-child a {
+    @apply text-slate-600 font-semibold;
+  }
 }
 
 .footer {

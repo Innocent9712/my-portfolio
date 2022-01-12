@@ -123,7 +123,8 @@ export default function Home() {
             <h1>
               Projects
             </h1>
-              <Projects />
+            <Projects />
+            <p> Want to see more? checkout my <a href="https://github.com/Innocent9712" target="_blank" referrerPolicy="no-referrer">github</a>.</p>
           </section>
         </main>
 
