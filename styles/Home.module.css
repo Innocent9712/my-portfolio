@@ -80,7 +80,6 @@
     @apply text-4xl my-7 ml-8;
     font-family: "Poppins", san-serif;
     color: #6F686D;
-    /* font-weight: 500; */
   }
 
   .intro figure {
@@ -136,12 +135,6 @@
   .projects {
     @apply w-11/12;
   }
-
-  /* .projects h1 {
-    @apply text-4xl mb-3;
-    font-family: "Poppins", san-serif;
-    color: #6F686D;
-  } */
 }
 
 .footer {
@@ -153,10 +146,3 @@
   justify-content: center;
   align-items: center;
 }
-
-
-
-
-
-
-

@@ -13,8 +13,8 @@ function Stack() {
     return (
         <ul className={styles.container}>
             {
-                stack.map(item => (
-                    <li key = {item}>
+                stack.map((item, index) => (
+                    <li key = {index}>
                         <Image
                         src={item}
                         alt={item}

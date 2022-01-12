@@ -1,15 +1,5 @@
-// import {getPostArr} from "../lib/projects"
-import Image from "next/image";
 import styles from "../styles/projects.module.css"
 
-// export async function getStaticProps() {
-//     const allPostsData = getSortedPostsData()
-//     return {
-//       props: {
-//         allPostsData
-//       }
-//     }
-//   }
 
 const projects = [
     {
@@ -22,21 +12,21 @@ const projects = [
     {
         name: "Spacetagram",
         img: "/images/spacetagram.png",
-        url: "https://resource-edge.netlify.app",
+        url: "https://spacetagran.netlify.app",
         source: "https://github.com/Innocent9712/Spacetagram.git"
     },
 
     {
         name: "Mix-Match",
         img: "/images/mix-match.png",
-        url: "https::mix-match.netlify.app",
+        url: "https:mix-match.netlify.app",
         source: "https://github.com/Innocent9712/mix-match.git"
     },
 
     {
         name: "Quick Question",
         img: "/images/quickquestion.png",
-        url: "https::quickquestion.netlify.app",
+        url: "https:quickquestion.netlify.app",
         source: "https://github.com/Innocent9712/QuickQuestion.git"
     }
 ]
@@ -57,9 +47,6 @@ function Projects() {
                                     className = {styles.siteImg}
                                     src={project.img}
                                     alt={project.name}
-                                    // width={150} 
-                                    // height={150}
-                                    // layout="fill"
                                     />
                                 ) : (
                                     <div>
