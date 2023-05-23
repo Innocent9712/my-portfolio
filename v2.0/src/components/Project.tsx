@@ -8,6 +8,7 @@ import diamond from "../assets/diamond.svg"
 import club from "../assets/club.svg"
 import github from "../assets/github.svg"
 import link from "../assets/link.svg"
+import "../App.css"
 
 const Project = () => {
     const { value } = useContext(AppContext);
@@ -35,7 +36,7 @@ const Project = () => {
                         <p className='text-xs'>Scroll to see more</p>
                     </div>
                 </div>
-                <div className="overflow-y-auto max-h-screen mt-6 md:mt-12 p-4">
+                <div className="overflow-y-auto max-h-screen mt-6 md:mt-12 p-4 custom">
                     <ul className='flex gap-10'>
                         {
                             selectedContent.projects.map((project, index) => {
