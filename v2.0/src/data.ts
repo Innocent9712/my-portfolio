@@ -59,12 +59,12 @@ export const content: Content = {
                 description: "A full-stack web application that allows users to search for mechanics nearby and get quotes for top cheapest repairs.",
                 techStack: ["react"],
                 github: "https://github.com/Innocent9712/colab16-team9",
-                image: "https://imgur.com/Zqj3NqR",
+                image: "https://i.imgur.com/Zqj3NqR.png",
                 demo: "https://dr-carquotes.netlify.app/"
             },
             {
                 title: "Project Pepper",
-                description: "An API project for a complex inventory managment system. This is the Specialization Portfolio Project for ALX SWE Program cohort5.",
+                description: "An API project for a complex Role Based Access Control inventory managment system.",
                 techStack: ["nodejs", "express", "mysql", "prisma", "typescript"],
                 github: "https://github.com/Innocent9712/project-pepper"
             },
@@ -73,14 +73,14 @@ export const content: Content = {
                 description: "A full-stack web application where people get to learn different nigerian languages and their dialects.",
                 techStack: ["react", "zustand"],
                 github: "https://github.com/patrickikhidero/Franca-Frontend",
-                image: "https://imgur.com/zRcLgYT",
+                image: "https://i.imgur.com/zRcLgYT.png",
                 demo: "https://franca-frontend-do3pm5emq-big-solve.vercel.app/"
             },
             {
                 title: "AirBnB Clone",
                 description: "A clone of AirBnB focused on exploring technolgies used to replicate the different components of the application.",
                 techStack: ["flask", "mysql", "shell"],
-                image: "https://imgur.com/2p7dgoY",
+                image: "https://i.imgur.com/2p7dgoY.png",
                 github: "https://github.com/AtienoMboya/AirBnB_clone_v4"
             }
         ]

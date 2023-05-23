@@ -6,6 +6,8 @@ import ace from "../assets/ace.svg"
 import heart from "../assets/heart.svg"
 import diamond from "../assets/diamond.svg"
 import club from "../assets/club.svg"
+import github from "../assets/github.svg"
+import link from "../assets/link.svg"
 
 const Project = () => {
     const { value } = useContext(AppContext);
@@ -46,7 +48,49 @@ const Project = () => {
                                                 <p className={`font-josefin ${[1, 2].indexOf(num) !== -1 ? "text-red-600": "text-shade-one"}`}>{count > 1 ? count : 'A'}</p>
                                                 <img src={choices[num]} alt="card image" className='w-4' />
                                             </div>
-                                            <div className='h-[365px] w-[70%] rounded-lg bg-shade-svn'></div>
+                                            <div className='h-[365px] w-[70%] rounded-lg bg-shade-svn relative'>
+                                                <div className='h-[35%] bg-shade-four w-full rounded-t-lg flex justify-center items-center'>
+                                                    {
+                                                        project.image ? (
+                                                            <img src={project.image} alt="project preview" className='h-full' />
+                                                        ) : (
+                                                            <p className='font-lobster text-shade-two'>No Preview Avaliable</p>
+                                                        )
+                                                    }
+                                                </div>
+                                                <div className='px-2 mt-2'>
+                                                    <ul className='flex gap-2 flex-wrap flex-row-reverse'>
+                                                        {
+                                                            project.techStack.map((item, index) => (
+                                                                <li key={index} className='text-shade-nine font-josefin text-[0.6rem] md:text-xs bg-shade-two px-3 py-1 rounded-full'>{item}</li>
+                                                            ))
+                                                        }
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5 className='font-lobster mt-1 ml-2'>{project.title}</h5>
+                                                    <p className='text-sm px-2 mt-3'>{project.description}</p>
+                                                </div>
+                                                <div className='absolute bottom-2 left-2'>
+                                                    <ul className='flex items-center gap-2'>
+                                                        <li>
+                                                            <a className='flex flex-col items-center' href={project.github} target="_blank" rel="noopener noreferrer">
+                                                                <img src={github} alt="github icon" />
+                                                                <p className='text-josefin text-[0.6rem]'>codebase</p>
+                                                            </a>
+                                                        </li>
+                                                        {
+                                                            project.demo &&
+                                                            <li>
+                                                                <a className='flex flex-col items-center' href={project.demo} target="_blank" rel="noopener noreferrer">
+                                                                    <img src={link} alt="deployed icon" className='mb-1' />
+                                                                    <p className='text-josefin text-[0.6rem]'>codebase</p>
+                                                                </a>
+                                                            </li>
+                                                        }
+                                                    </ul>
+                                                </div>
+                                            </div>
                                             <div className='flex flex-col items-center absolute bottom-4 right-4 scale-y-[-1]'>
                                                 <p className={`font-josefin ${[1, 2].indexOf(num) !== -1 ? "text-red-600": "text-shade-one"}`}>{count > 1 ? count : 'A'}</p>
                                                 <img src={choices[num]} alt="card image" className='w-4' />
