@@ -3,6 +3,8 @@ import './App.css'
 import Header from './components/Header'
 import About from './components/About';
 import Skills from './components/Skills';
+import Project from './components/Project';
+import Footer from './components/Footer';
 
 
 interface AppContextType {
@@ -19,10 +21,14 @@ const initialContextValue: AppContextType = {
 export const AppContext = createContext<AppContextType>(initialContextValue);
 
 function App() {
-  const [value, setValue] = useState("swe");
+  const urlParams = new URLSearchParams(window.location.search);
+  const role = urlParams.get("role")
+  const [value, setValue] = useState((role ? role : "swe"));
 
   const handleChange = (newValue: string) => {
     setValue(newValue);
+    urlParams.set("role", newValue)
+    window.history.pushState({}, "", `?${urlParams}`);
   };
 
   const contextValue = {
@@ -36,9 +42,11 @@ function App() {
         className='bg-white bg-no-repeat bg-opacity-50 app'
       >
         <Header />
-        <main className='w-[90%] mx-auto max-w-[100rem]'>
+        <main className='w-[90%] mx-auto max-w-[85rem]'>
           <About />
           <Skills />
+          <Project />
+          <Footer />
         </main>
       </div>
   </AppContext.Provider>
