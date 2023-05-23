@@ -108,6 +108,25 @@ export const content: Content = {
                 others: ["nexus", "jenkins", "flux CD", "docker", "kubernetes", "linux", "Virtual Machines"]
             },
         },
-        projects: []
+        projects: [
+            {
+                title: "Socks Shop Microservices",
+                description: "A microservices application deployed on Kubernetes using Helm charts, Flux and Github Actions.",
+                techStack: ["kubernetes", "flux cd", "helm", "github actions"],
+                github: "https://github.com/Innocent9712/Altschool-Semester-3-Exam"
+            },
+            {
+                title: "AWS Bootcamp Crudder",
+                description: "Deploying a Social media Application utilizing several DevOps and Cloud technologies on the FREE AWS Cloud Project Bootcamp.",
+                techStack: ["AWS", "docker",  "and more..."],
+                github: "https://github.com/Innocent9712/aws-bootcamp-cruddur-2023"
+            },
+            {
+                title: "Terraform Mini Project",
+                description: "Deploying a Laravel application using Ansible and Terraform and Some AWS Services.",
+                techStack: ["Ansible", "AWS", "Terraform"],
+                github: "https://github.com/Innocent9712/altschool-cloud-exercises/tree/master/terraform-mini-project"
+            }
+        ]
     }
 }
