@@ -85,7 +85,7 @@ const Project = () => {
                                                             <li>
                                                                 <a className='flex flex-col items-center' href={project.demo} target="_blank" rel="noopener noreferrer">
                                                                     <img src={link} alt="deployed icon" className='mb-1' />
-                                                                    <p className='text-josefin text-[0.6rem]'>codebase</p>
+                                                                    <p className='text-josefin text-[0.6rem]'>website</p>
                                                                 </a>
                                                             </li>
                                                         }
