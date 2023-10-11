@@ -74,7 +74,7 @@ export const content: Content = {
                 techStack: ["react", "zustand"],
                 github: "https://github.com/patrickikhidero/Franca-Frontend",
                 image: "https://i.imgur.com/zRcLgYT.png",
-                demo: "https://franca-frontend-do3pm5emq-big-solve.vercel.app/"
+                demo: "https://francaff.netlify.app/"
             },
             {
                 title: "AirBnB Clone",
