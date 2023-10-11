@@ -51,7 +51,7 @@ const Header = () => {
                 }
             </div>
             <div className='flex justify-end px-3'>
-                 <a href="https://drive.google.com/file/d/1ljdLY9vTPssDQn5GRZ3R1g1sov29xJFa/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                 <a href="https://drive.google.com/file/d/13TsiYRrOzZjzodvk6rrPA31cK-NTwoFM/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <button className='text-white bg-shade-one flex items-center gap-2'>
                         <p>Download CV</p>
                         <i className="ri-arrow-down-fill"></i>
